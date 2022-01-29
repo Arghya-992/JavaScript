@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+    <title> No. range </title>
+
+    <form>
+        <label> Input the number </label>
+        <input type = "number" id ="1st" value ="">
+        <button type ="button" onclick = "rangedeterminer()"> Find out range </button> 
+</form>
+<p id="calculaterange">
+    <script>
+        function rangedeterminer(){
+            var q = document.getElementById("1st").value;
+            if (q >=0 && q<=9){
+                document.getElementById("calculaterange").innerHTML = " No is withing range 1 to 10"; 
+        } else if (q>=10 && q<=19){
+            document.getElementById("calculaterange").innerHTML = " No is withing range 11 to 19"; 
+        } else if (q>=20 && q<=29){
+            document.getElementById("calculaterange").innerHTML = " No is withing range 20 to 29"; 
+        } else if (q>=30 && q<=39){
+            document.getElementById("calculaterange").innerHTML = " No is withing range 30 to 39"; 
+        } else if (q>=40 && q<=49){
+            document.getElementById("calculaterange").innerHTML = " No is withing range 40 to 49"; 
+        } else {
+            document.getElementById("calculaterange").innerHTML = " No you entered is greater than provided range"; 
+        }   
+        }
+        </script>
+
+</head>
+</html>
